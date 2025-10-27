@@ -1,17 +1,21 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-// Zmienna globalna – istnieje przez cały czas działania programu
-int licznik = 0;
+int  liczba1;
+int liczba2;
+char znak;
 
-void funkcja() {
-    // Zmienna lokalna – tworzona na nowo przy każdym wywołaniu funkcji
-    int licznik_funkcji = 5;
-    printf("W funkcji: licznik_funkcji = %d\n", licznik_funkcji);
-}
+int main(){
 
-int main() {
-    printf("W main (globalna): licznik = %d\n", licznik);
-    funkcja();
-    printf("Po powrocie do main: licznik = %d\n", licznik);
-    return 0;
+    printf("Podaj liczbe1:");
+    scanf("%d", &liczba1);
+
+    printf("Podaj liczbe2:");
+    scanf("%d", &liczba2);
+
+    printf("Podaj znak:");
+    scanf("%c", &znak);
+
+
+    return 0; 
 }
